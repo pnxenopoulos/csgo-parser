@@ -3,13 +3,6 @@ from typing import Dict, List, Tuple, Union
 
 import pandas as pd
 
-from csgo.parser import DemoParser
-
-demo_parser = DemoParser(demofile="../../../CSGO_Demofiles/gambit-vs-natus-vincere-m1-dust2.dem", 
-                         demo_id="GMB-NAVI-BLAST2021", 
-                         parse_rate=128)
-data = demo_parser.parse(return_type="df")
-
 
 def extract_num_filters(filters: Dict[str, Union[List[bool], List[str]]], 
                         key: str) -> Tuple[List[str], List[float]]:
