@@ -4,7 +4,7 @@ import pytest
 from csgo.analytics.stats import (extract_num_filters, check_filters, 
                                   num_filter_df, filter_df, calc_stats, kdr,
                                   adr, headshot_pct, util_dmg, weapon_type, 
-                                  kills_by_weapontype)
+                                  kills_by_weapon_type)
                                  
                                   
 class TestStats:
